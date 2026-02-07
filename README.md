@@ -18,7 +18,7 @@ Defined specific attributes for each class (e.g., PESEL, contactDetails, VisitSt
 Assigned operations to the classes they logically belong to (e.g., assignDoctor() within the Visit class).
 Relationship Mapping:
 Associations: Defined with explicit multiplicities and role names to ensure data integrity.
-![Class Diagram](./stage_2/Class Model.png)
+![Class Diagram](stage_2/Class Model.png)
 
 Stage 3: Dynamic Modeling (Behavioral Design)
 The final phase modeled how objects interact over time and how they change states during system execution. A total of 6 diagrams were developed:
