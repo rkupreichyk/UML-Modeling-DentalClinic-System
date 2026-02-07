@@ -8,7 +8,7 @@ Stakeholder Identification: Defined key actors, including the Patient, Reception
 Use Case Diagram (UCD):
 Designed core system services such as registration, online booking, appointment cancellation, and schedule management.
 Applied include and extend relationships to structure complex logic and avoid redundancy.
-[Download Vision Document (PDF)](./stage1/WizjaSystemu.pdf)
+[Download Vision Document (PDF)](./stage_1/WizjaSystemu.pdf)
 
 Stage 2: Static Modeling (Class Architecture)
 This stage involved designing the system's "skeleton"—its structure and data relationships.
@@ -18,7 +18,7 @@ Defined specific attributes for each class (e.g., PESEL, contactDetails, VisitSt
 Assigned operations to the classes they logically belong to (e.g., assignDoctor() within the Visit class).
 Relationship Mapping:
 Associations: Defined with explicit multiplicities and role names to ensure data integrity.
-![Class Diagram](./stage2/Class Model.png)
+![Class Diagram](./stage_2/Class Model.png)
 
 Stage 3: Dynamic Modeling (Behavioral Design)
 The final phase modeled how objects interact over time and how they change states during system execution. A total of 6 diagrams were developed:
