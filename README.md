@@ -9,6 +9,7 @@ Use Case Diagram (UCD):
 Designed core system services such as registration, online booking, appointment cancellation, and schedule management.
 Applied include and extend relationships to structure complex logic and avoid redundancy.
 [Download Vision Document (PDF)](./stage_1/WizjaSystemu.pdf)
+![Class Diagram](stage_2/Przypadki_uzycia.png)
 
 Stage 2: Static Modeling (Class Architecture)
 This stage involved designing the system's "skeleton"—its structure and data relationships.
@@ -22,14 +23,18 @@ Associations: Defined with explicit multiplicities and role names to ensure data
 
 Stage 3: Dynamic Modeling (Behavioral Design)
 The final phase modeled how objects interact over time and how they change states during system execution. A total of 6 diagrams were developed:
+![Class Diagram](stage_3/diagrams/Diagram%20sekwencji%20Rezerwacja%20wizyty.png)
 Sequence Diagrams (3):
 Illustrated the chronological exchange of messages between actors, UI objects, and system lifelines.
 Utilized Fragments (Alt, Opt, Loop) to model conditional logic and iterative processes.
 Ensured deep-system interactions relied on synchronous message calls corresponding to the operations defined in the Class Diagram .
+![Class Diagram](stage_3/diagrams/Diagram%20komunikacji.png)
 Communication Diagram (1):
 Focused on the structural relationships and links between objects participating in a specific Use Case interaction .
+![Class Diagram](stage_3/diagrams/Diagram%20czynności.png)
 Activity Diagram (1):
 Modeled the high-level business process (e.g., the workflow from a patient's initial inquiry to the final payment) .
+![Class Diagram](stage_3/diagrams/Diagram%20stanu.png)
 State Machine Diagram (1):
 Defined the lifecycle of a complex object, such as a Visit.
 Specified states (e.g., New, Confirmed, Cancelled, Completed) and transitions triggered by specific events, guarded by conditions, and resulting in defined effects .
