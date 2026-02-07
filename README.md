@@ -43,3 +43,10 @@ Defined the lifecycle of a complex object, such as a Visit.
 Specified states (e.g., New, Confirmed, Cancelled, Completed) and transitions triggered by specific events, guarded by conditions, and resulting in defined effects .
 ![Class Diagram](stage_3/diagramy/Diagram%20stanu.png)
 
+---
+
+# Final System Model
+Below is the link to the final version of the system model. [cite_start]Please note that **Enterprise Architect** is required to view the `.qea` file[cite: 16, 68].
+
+* **Latest Version:** [stage_3/PU_and_DiagramKlasV2.qea](./stage_3/PU_and_DiagramKlasV2.qea)
+* **Download Enterprise Architect:** [Sparx Systems Official Website](https://sparxsystems.com/products/ea/trial/request.html)
