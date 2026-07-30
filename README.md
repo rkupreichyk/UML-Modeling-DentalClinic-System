@@ -1,13 +1,14 @@
 # Online Appointment Booking System – "Zdrowy Ząbek" Clinic
-This project presents a complete Object-Oriented Analysis and Design (OOAD) for a private dental clinic in Gdańsk. The system aims to automate the booking process, currently handled manually via paper calendars or simple spreadsheets.
 
-Stage 1: Requirements Engineering & Use Case Modeling
-This phase focused on defining what the system must do and identifying its primary users.
-Problem Analysis: Conducted a study of the "Zdrowy Ząbek" dental clinic in Gdańsk to address high administrative costs (~90,000 PLN/year per receptionist) and manual scheduling inefficiencies.
-Stakeholder Identification: Defined key actors, including the Patient, Receptionist, Dentist, Assistant, and Administrator, as well as external systems like Email/SMS.
-Use Case Diagram (UCD):
-Designed core system services such as registration, online booking, appointment cancellation, and schedule management.
-Applied include and extend relationships to structure complex logic and avoid redundancy.
+This project encompasses the Object-Oriented Analysis and Design (OOAD) and Software Requirements Specification (SRS) for a comprehensive appointment booking platform designed for a private dental clinic in Gdańsk. The system automates patient scheduling, replacing traditional paper calendars with a 24/7 web-based application to optimize medical staff availability.
+
+## 1. Object-Oriented Analysis and Design (OOAD)
+The modeling phase maps the system's structural and behavioral logic using standard UML conventions.
+
+**Stage 1: Requirements Engineering & Use Case Modeling**
+* Conducted problem analysis to address manual scheduling inefficiencies and high administrative costs.
+* Identified key primary and secondary actors: Patient, Receptionist, Dentist, Assistant, Administrator, and Email/SMS gateways.
+* Mapped core system services (registration, booking, cancellation) using a Use Case Diagram with defined *include* and *extend* relationships.
 [Download Vision Document (PDF)](./stage_1/WizjaSystemu.pdf)
 ![Class Diagram](stage_2/Przypadki_uzycia.png)
 
@@ -43,10 +44,27 @@ Defined the lifecycle of a complex object, such as a Visit.
 Specified states (e.g., New, Confirmed, Cancelled, Completed) and transitions triggered by specific events, guarded by conditions, and resulting in defined effects .
 ![Class Diagram](stage_3/diagramy/Diagram%20stanu.png)
 
----
+## 2. Software Requirements Specification (SRS)
+The complete functional and non-functional requirements are documented in **SRS_DentalClinic.pdf**. The system architecture is built on reliable, straightforward components to ensure high availability and data security. 
 
-# Final System Model
-Below is the link to the final version of the system model. [cite_start]Please note that **Enterprise Architect** is required to view the `.qea` file[cite: 16, 68].
+**Business and Functional Objectives**
+* Provide a responsive, 24/7 online portal for patients to search available slots and independently manage appointments.
+* Automate SMS and email notifications to request confirmations and remind patients of upcoming visits.
+* Supply reception staff with a centralized internal panel to monitor schedules, manage manual overrides, and resolve scheduling conflicts.
+* Offer dentists an isolated, responsive view of their daily and weekly schedules.
 
+**System Architecture & Subsystems**
+* **Patient Booking Subsystem:** A public-facing web frontend and backend API facilitating slot filtering, user authentication, and appointment creation.
+* **Administration Subsystem:** An internal module for clinic staff to manage overall workflow, block out doctor unavailability, and configure system rules.
+* **Integration Subsystem:** A dedicated background service handling external SMS gateway communications and bidirectional calendar synchronization with the clinic's local Dental PMS.
+
+**Technical Stack & Quality Requirements**
+* **Database:** Relational storage utilizing PostgreSQL or MySQL, featuring automated daily backups.
+* **Frontend:** Built with HTML, CSS, and JavaScript, strictly compliant with WCAG 2.1 accessibility standards.
+* **Infrastructure:** Hosted on a cloud server utilizing Docker containerization for stable deployment and environment isolation.
+* **Security & Performance:** Requires HTTPS/SSL data encryption, GDPR-compliant data handling, CAPTCHA bot protection, and a system response time of under 2 seconds under standard load.
+
+## 3. Final System Model
+The finalized architectural structure, including all diagrams, is compiled into an Enterprise Architect project file. Please note that **Enterprise Architect** is required to view the `.qea` file.
 * **Latest Version:** [stage_3/PU_and_DiagramKlasV2.qea](./stage_3/PU_and_DiagramKlasV2.qea)
 * **Download Enterprise Architect:** [Sparx Systems Official Website](https://sparxsystems.com/products/ea/trial/request.html)
